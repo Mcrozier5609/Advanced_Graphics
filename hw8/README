@@ -1,0 +1,15 @@
+Michael Crozier
+HW8: Stored Textures
+CSCI 4239
+
+HOW TO RUN:
+Just type 'make' and then './hw8' to run
+
+WHAT YOU'LL SEE:
+I used exercise 16 as a starting point so it should look like that. A new shader has been added to the list called 'hw8new'. Select that. You should see a map of the USA with some colors overlayed on it. My goal was to use the wood shader's noise to make a sort of temperature map pattern. There's no key but red is hot and blue is cold and the colors in between are in between. Obviosly my weather predictions aren't accurate or else the Caribbean would be experiencing record low temperatures and the middle of Canada would be experiencing a heat ridden apocolypse.
+
+CITATIONS:
+I used example 16 as a starting point.
+
+TIME TO COMPLETE:
+About 3 hours.

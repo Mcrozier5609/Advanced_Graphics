@@ -1,0 +1,12 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>hw8.vert</file>
+    <file>hw8a.frag</file>
+    <file>hw8b.frag</file>
+    <file>hw8c.frag</file>
+    <file>hw8d.frag</file>
+    <file>bunny.obj</file>
+    <file>hw8new.frag</file>
+    <file>us-snow-cover-map-us-snow-cover-map-noaa-with-512.jpg</file>
+</qresource>
+</RCC>
