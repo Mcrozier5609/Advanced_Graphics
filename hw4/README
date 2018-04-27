@@ -1,0 +1,14 @@
+Michael Crozier
+HW4: OpenGL 3&4
+
+MAKE/RUN:
+	Type make to compile, and ./hw4 to run
+
+HOW TO USE:
+	Welp, it's example 6 turned into example 7 (hopefully). So just switch to the programmable pipeline and see the magic.
+
+Citations:
+	I collaborated with Hunter Haskins, used ex06 as a starting point, and heavily looked at the phong lighting from past homeworks.
+
+Time to complete:
+	About 6 hours
