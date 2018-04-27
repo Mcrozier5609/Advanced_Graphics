@@ -1,0 +1,19 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>hw7a.frag</file>
+    <file>hw7b.frag</file>
+    <file>hw7c.frag</file>
+    <file>hw7d.frag</file>
+    <file>hw7e.frag</file>
+    <file>hw7f.frag</file>
+    <file>hw7g.frag</file>
+    <file>hw7h.frag</file>
+    <file>hw7_dunno.frag</file>
+    <file>hw7_negative.frag</file>
+    <file>hw7_both.frag</file>
+    <file>cruiser.obj</file>
+    <file>cruiser.mtl</file>
+    <file>cruiser.png</file>
+    <file>water.png</file>
+</qresource>
+</RCC>

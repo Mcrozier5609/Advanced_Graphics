@@ -1,0 +1,14 @@
+Michael Crozier
+HW7: Image Processing
+
+TO RUN:
+	Type make, and then ./hw7 to run
+
+WHAT YOU SEE:
+	I used example 11 as a starting point, so it will start out the same as that. I added 3 new shaders that are at the end of the list. The first, aptly named "dunno" because I just played around with it until something happened, switches between sharpening Laplacian edge detection by looping through sin. It also does passing over in the x direction, making a neato light to dark effect. The second shader "negative" does the same thing as the first, but with the colors reversed. The third shader "both" is the same as the first one, but this time it switches between blurring and edge detection, which I also thought looked cool.
+
+CITATIONS:
+	Used example 11 as a starting point.
+
+TIME TO COMPLETE:
+	About 3 hours
