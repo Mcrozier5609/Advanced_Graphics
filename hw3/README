@@ -1,0 +1,49 @@
+Michael Crozier
+HW3: Performance
+
+HOW TO USE:
+	Type "make" and then "./hw3" to run
+	There's not really much to see except that I've added a couple variations of my procedural texture to the list of shaders.
+	You can follow along with the tests I've done to verify that you get similar results, or you can just read what I found out. I list the tests I did first, then what I think will happen, and then what actually happened plus some explanation as to why.
+
+TESTS PERFORMED:
+	1) Switched between integrated graphics and my nvidia graphics card on my machine
+	2) Switch between small window and fullscreen
+	3) Difference between loading a texture from a picture, versus procedurally generating one (like in hw2)
+	4) Change the viewing angle as fast as I can by dragging the mouse back and forth.
+	5) Differnece between Phong and Blinn Phong lighting in perspective and orthogonal.
+	6) Compare between my procedural shader (which calls a bunch of built in and hand made functions) and my procedural shader with all it's functions taken out (that I could manage) and replaced with just inline stuff.
+	7) I use sin() in my shader, how does it compare if I replace that with a constant? And then how does it compare if do that a thousand times in a loop? I'll have a loop with sin()'s and one with constants to see if they are different.
+	8) Since adding in a loop for a thousand times didn't really do anything, what if I go further? 1 million times? 1 billion? And if a big loop like that does slow it down, does putting sin's in the loop slow it down further?
+	9) Running my program on my machine vs my roomates machine
+	10) Finally, lets run a quick version of all the other tests, but on the teapot and the space ship, and see how they compare to the box.
+
+EXPECTED RESULTS:
+	1) Integrated graphics should perform worse than the graphics card
+	2) I'd expect fps should go down since more pixels are being drawn per second
+	3) I would think procedurally generated a texture would be slower, but take up less memory probably? At this small scale though I'm not really sure.
+	4) So every time I change the viewing angle, the program should call update, which should take more processing power than not doing so, so the framerate should drop.
+	5) Blinn phong is supposed to be faster than phong when the light and viewer are stationary because the dot product of the half vector and surface normal vector need only be calculated once because H and N don't change, which is way faster than calculating the dot product of the reflected and viewer vector for every pixel with phong lighting. But, our light is moving around and I can change my viewing angle, so in general I would think they would perform about the same.
+	6) In theory not calling functions should be faster but it does look more messy.
+	7) Welp, I replacing a complex calculation with a constant so it should be faster. But given how small this test is, I doubt there will be any noticeable difference. Adding in a useless loop though, I think that will make it worse.
+	8) It has to break down eventually. Given how well it did at 1000, I'm thinking it will still do well at 1 million, and a bit slower at 1 billion.
+	9) My roomate's computer is only a month old and has a GTX 1060, and mine is about 4 years old with a GTX 860, so my roomate's computer should have higher FPS due to both the better graphics card and newer CPU, hardrive, etc.
+	10) The teapot and spaceship are more complex models than just the cube, so I would think the frame rate would be lower for them. What I don't know is if some of these tests will have a greater or lesser effect on the more complex models. I really have no idea.
+
+FINDINGS:
+	1) While using my nvidia graphics card (GTX 860) my fps hovered around 3400. While using integrated graphics fps was locked to 60. So integrated graphics is technically worse, but since it's locked I don't know by how much. As to why it stays at 60, I'm really not sure. Maybe integrated graphics locks itself to no more than 60 because it is generally used when running on battery, so it does that to save battery life? That's the best answer I can think of.
+	2) Fps did indeed go down, from about 3600 in the standard window size down to around 950. Another thing of note though is that in fullscreen the FPS is much more stable, only changing at most by about 15, whereas in the small window the FPS cn change as much as 300.
+	3) Looks like the frame rate dropped by about 100 when viewing the procedurally generated shader in a small window, and I can't tell a difference in full screen. So basically there is no change.
+	4) The frame rate definitely did drop by quite a bit. By a good 300 frames in the small window, and by about 500 in fullscreen. So this had a greater effect in fullscreen.
+	5) As far as I could tell, they did perform the same.
+	6) Again, I couldn't really tell any difference.
+	7) Quick note on this one, I just rewrote the "hw2_no_sin.frag" file over and over again for the different tests, so only the last one with a big sin loop is still there. So taking out the one sin had no effect, adding in a loop with no sin's in it had no effect, and adding in a loop with sin's also had you guessed it, no effect.
+	8) OK so the 1 million loop reduced the frame rate to about 1500 in the small window, and about 200 in fullscreen. The 1 billion completely froze the program and my computer, but I was able to close out of it without restarting. So the 1 million loop slows it down, however there was still no difference between putting a sin() call in the loop versus nothing. So it looks like transcendetal functions really have little to no effect.
+	9) Yup so in general for the basic tests my machine hovers around 3400 fps, and Hunter's hovers around 11000 fps. So WAY better. Weird things to note however, when I go full screen my fps drops to around 900, but his doesn't drop at all. Also, Hunter's machine get's 11000 fps on the laptop screen, but drops to around 3500 when connected to a moniter.
+	10) The cube ran at around 3400 fps, the teapot ran at around 1300, and the cruiser at around 2400. So already they are performing worse. The teapot is the most complex model I think, and it has the lowest framerate, so that makes sense. Changing the lighting had no effect. Changing to fullscreen, all three models performed worse, with the cube still being a little bit better. Interestingly enough though the teapot and cruiser were much closer in FPS at fullscreen. When changing the viewing angle the FPS for the teapot and cruiser still dropped a bit, but not by as much as the cube did. Honestly I have no idea why. And once again, using my procedural texture had no effect, swapping the functions with inline code had no effect, and having a giant useless loop did slow it down. So what I can conclude from this test is that the more complex models perform worse than a simple cube, with not really any surprising additions to that.
+
+TIME TO COMPLETE:
+	About 5 hours
+
+CITATIONS:
+	Used the hw3 code as a starting point, and I collaborated with Hunter Haskins for the part where I tested my stuff on a different machine (namely his).
