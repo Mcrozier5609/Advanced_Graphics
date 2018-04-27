@@ -1,0 +1,7 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>hw9_snow.vert</file>
+    <file>hw9_snow.frag</file>
+    <file>snow.png</file>
+</qresource>
+</RCC>

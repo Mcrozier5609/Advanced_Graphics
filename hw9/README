@@ -1,0 +1,14 @@
+Michael Crozier
+HW9: Advanced Shaders
+
+TO RUN:
+	Type "make" and then "./hw9" to run
+
+WHAT YOU SHOULD SEE:
+	I made a little particle system for snowfall. So the screen should be mostly covered with snow lightly drifting down. If you zoom out you'll notice the amount of snow is not dependent on how zoomed you are, it's just a big rectangulare prism shape.
+
+CITATIONS:
+	Started from example 19
+
+TIME TO COMPLETE:
+	About 2 and a half hours
