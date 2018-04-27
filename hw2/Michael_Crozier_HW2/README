@@ -1,0 +1,14 @@
+Michael Crozier
+HW2: Procedural Textures
+
+make/run:
+	Type "make", and then type "./hw2" to run
+
+How to use:
+	Works exactly the same as example 03, drag the object to view, mouse scroll to zoom, and use the various qt buttons to do their stuff. The most important thing is that on the top right, click the shaders button and you will see that there are two options, one for no shader (shown at the start) and my shader. Switch to my shader to see it. It is psuedo random noise, with color's that flood in and out over time.
+
+Citations:
+	I Used the ex03 code from this class, and used The Book of Shaders for help with the noise stuff.
+
+Time to complete:
+	About 4.5 hours.
