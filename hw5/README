@@ -1,0 +1,14 @@
+Michael Crozier
+HW5: WebGL
+
+TO RUN:
+	I didn't set up chrome stuff, so I'd open up the html file in firefox.
+
+TO USE:
+	Open up the html file in a web browser (do firefox) and you should see a crate textured cylinder thing. Actually, it'll start off as a blue and black cylinder because the texture hasn't loaded yet, just click once and it should update to the right image. The top and bottom are red, and the sides are made up of green and purple triangles. I left them colored like that to show how the cylinder is formed. Then notice how the cylinder is textured and lit. The light doesn't move, and is positioned at (0,1,3). Imagine the light is in your head.
+
+CITATIONS:
+	Started with example 08.
+
+TIME TO COMPLETE:
+	About 12 hours, I had a weirdly large amount of trouble with this.
