@@ -1,0 +1,8 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>hw1.vert</file>
+    <file>hw1.frag</file>
+    <file>suzanne.obj</file>
+    <file>suzanne.mtl</file>
+</qresource>
+</RCC>

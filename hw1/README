@@ -1,0 +1,14 @@
+Michael Crozier
+HW1: NDC to RGB Shader
+
+make/run:
+	Type "make", and then type "./hw1" to run
+
+How to use:
+	Drag the object to view it from various angles. Use the QT menu to toggle the shader on and off, toggle between orthogonal and perspective projection modes, change object between showing a cube, teapot, or suzanne, and toggle lighting. Press the 'quit' button to quit. Notice the object gets very black in the lower back left corner, and very white in the front top right corner.
+
+Citations:
+	Used the ex01 code from this class. I only changed the two shader files.
+
+Time to complete:
+	About 2 hours.
